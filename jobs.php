@@ -1,4 +1,16 @@
-<?php require('includes/db.php'); ?>
+<?php require('includes/db.php'); 
+
+if(isset($_GET['page']))
+{
+  $page=$_GET['page'];
+}else{
+  $page=1;
+}
+
+$post_per_page=3;
+$result= ($page-1)*$post_per_page;
+
+?>
 
 
 <!DOCTYPE html>
@@ -7,7 +19,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jobs|| Latest jobs in IT companies</title>
+    <?php 
+    $query = "SELECT * FROM keywords WHERE key_slug='placement'";
+		$res = mysqli_query($db,$query);
+		$row = mysqli_fetch_assoc($res);
+		?>
+		<title><?php echo $row['key_title']; ?></title>
+		<meta name="keywords" content="<?php echo $row['key_words']; ?>">
+		<meta name="description" content="<?php echo $row['key_desc']; ?>">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 </head>
 <body>
     <?php 
@@ -19,7 +40,7 @@
 
 <?php 
 
-$postquery= 'select * from post';
+$postquery= "select * from post order by id desc limit $post_per_page";
 
 $runPQ= mysqli_query($db,$postquery);
 
@@ -36,7 +57,13 @@ while($post=mysqli_fetch_assoc($runPQ))
         </div>
         <div class="md:flex-grow">
           <h2 class="text-2xl font-medium text-gray-900 title-font mb-2"><?= $post['title'] ?></h2>
-          <p class="leading-relaxed text-truncate"><?= $post['content'] ?></p>
+          <p class="leading-relaxed" style="
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+"><?= $post['content'] ?></p>
           <a class="text-indigo-500 inline-flex items-center mt-4" href="details.php?id=<?=$post['id']?>">Learn More
             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path d="M5 12h14"></path>
@@ -53,6 +80,24 @@ while($post=mysqli_fetch_assoc($runPQ))
 }
 ?>
 
+<div class=" container flex items-center space-x-1">
+    <a href="#" class="flex items-center px-4 py-2 text-gray-500 bg-gray-300 rounded-md">
+        Previous
+    </a>
+
+    <a href="#" class="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-400 hover:text-white">
+        1
+    </a>
+    <a href="#" class="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-400 hover:text-white">
+        2
+    </a>
+    <a href="#" class="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-400 hover:text-white">
+        3
+    </a>
+    <a href="#" class="px-4 py-2 font-bold text-gray-500 bg-gray-300 rounded-md hover:bg-blue-400 hover:text-white">
+        Next
+    </a>
+</div>
 
 
 

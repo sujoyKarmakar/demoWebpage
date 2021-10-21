@@ -50,18 +50,6 @@ $post=mysqli_fetch_assoc($runPQ);
   </div>
 </section>
 
-<?php
-
-?>
-
-
-
-
-
-
-
-
-
     <?php 
     include 'includes/footer.php'
     ?>
