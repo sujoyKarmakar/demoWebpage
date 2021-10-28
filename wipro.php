@@ -50,39 +50,31 @@ require "includes/header.php"
 
   <div class="container py-24">
     <div class="title">
-      <h1>IBM Placement Papers for Freshers</h1>
+      <h1>Wipro Placement Papers 2021</h1>
     </div>
 
     <div class="subtitle">
-      <h1>IBM Previous Papers with Solution PDF 2021</h1>
-      <p>Visit Our IBM Placement Papers with Answers 2021 Dashboard for the Latest IBM Questions and Answers. The IBM Placement paper pattern has been changed.  PrepInsta provides you new pattern IBM Previous Papers with Solutions. IBM Previous Placement Papers with Solutions PDF, IBM Previous year Question Papers with Answers PDF</p>
-      
+      <h1>Wipro Previous Years based Questions with Solutions 2021</h1>
+      <p>Here on this page, you will find the Latest Wipro Placement Questions with similar patterns which we have analyzed from Previous Year Wipro placement papers with solutions for 2021 are discussed below.</p>
+      <p>As seen from Wipro's previous papers the test is of moderate difficulty. We have tried to put questions of each and every topic covering all the patterns.</p>
     </div>
 
 
     <div class="tables">
       <div class="properties">
-        <h3>Name of section</h3>
-        <p>Quant</p>
-        <p>verbal</p>
-        <p>Reasoning</p>
-        <p>programming logic</p>
-        <p>Hands ON(coding 1)</p>
-        <p>Hands ON(coding 2)</p>
-        <p style="color: black; font-weight: 300;">Total</p>
+        <h3>Placement Exam for</h3>
+        <p>Number of section</p>
+        <p>Type of exam</p>
+        <p style="color: black; font-weight: 300;">Mode Conducted</p>
 
 
 
       </div>
       <div class="values">
-        <h3>Number of questions</h3>
-        <p>24 Ques</p>
-        <p>26 Ques</p>
-        <p>30 Ques</p>
-        <p>10 Ques</p>
-        <p>1 code</p>
-        <p>1 code</p>
-        <p style="color: black;">92</p>
+        <h3>Wipro</h3>
+        <p>3</p>
+        <p>Adaptive</p>
+        <p style="color: black;">Online/Written</p>
 
 
       </div>

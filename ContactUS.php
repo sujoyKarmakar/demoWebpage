@@ -56,7 +56,7 @@ if(isset($_POST['submit']))
   if($res)
   {
     ?>
-    <script>alert("Query registered successfullt=y")</script>
+    <script>alert("Query registered successfully")</script>
     <?php
   }else
   {

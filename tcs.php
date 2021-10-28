@@ -50,13 +50,13 @@ require "includes/header.php"
 
   <div class="container py-24">
     <div class="title">
-      <h1>IBM Placement Papers for Freshers</h1>
+      <h1>TCS Placement Papers 2022</h1>
     </div>
 
     <div class="subtitle">
-      <h1>IBM Previous Papers with Solution PDF 2021</h1>
-      <p>Visit Our IBM Placement Papers with Answers 2021 Dashboard for the Latest IBM Questions and Answers. The IBM Placement paper pattern has been changed.  PrepInsta provides you new pattern IBM Previous Papers with Solutions. IBM Previous Placement Papers with Solutions PDF, IBM Previous year Question Papers with Answers PDF</p>
-      
+      <h1>TCS Previous Papers with Solutions for Recruitment 2022</h1>
+      <p>TCS Placement based Papers with Solutions are given below. If you're looking for TCS Placement Paper 2022 for your Recruitment Test? Don't worry you will find all the TCS Previous Year based Papers with Solutions on PrepInsta. Around 91% of the students who got selected in TCS had prepared from PrepInsta, so you're at the best place to learn.</p>
+      <p>TCS Online Test has totally of 6 sections and a total of 92 questions and the time given is 180 mins. We suggest you study from our TCS Model papers and TCS Sample papers given on our website and a good amount of questions will be of a similar pattern in the TCS Written Test 2022.</p>
     </div>
 
 
